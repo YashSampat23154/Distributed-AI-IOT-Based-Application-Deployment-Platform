@@ -1,0 +1,194 @@
+{"Sensor_meta":[{
+    "Location": "nilgiri",
+    "lat":"17",
+    "long":"78",
+    "Sensors":
+    [   {
+            "sensor_id": "nilgiri_camera_1",
+            "sensor_type":"camera",
+            "sensor_geolocation": {
+              "lat": "17",
+              "long": "78"
+            },
+            "sensor_address": {
+              "building": "nilgiri",
+              "room_no": "100"
+            },
+            "processing": {
+              "data_rate": 0
+            },
+            "sensor_label": ["nilgiri_camera_1", "Timestamp", "Exposure", "Focus"]
+        },{
+            "sensor_id": "nilgiri_camera_2",
+            "sensor_type":"camera",
+            "sensor_geolocation": {
+              "lat": "17",
+              "long": "78"
+            },
+            "sensor_address": {
+              "building": "nilgiri",
+              "room_no": "101"
+            },
+            "processing": {
+              "data_rate": 0
+            },
+            "sensor_label": ["nilgiri_camera_2", "Timestamp", "Exposure", "Focus"]
+        },{
+            "sensor_id": "nilgiri_camera_3",
+            "sensor_type":"camera",
+            "sensor_geolocation": {
+              "lat": "17",
+              "long": "78"
+            },
+            "sensor_address": {
+              "building": "nilgiri",
+              "room_no": "102"
+            },
+            "processing": {
+              "data_rate": 0
+            },
+            "sensor_label": ["nilgiri_camera_3", "Timestamp", "Exposure", "Focus"]
+        },{
+            "sensor_id": "nilgiri_thm_1",
+            "sensor_type":"thermostat",
+            "sensor_geolocation": {
+              "lat": "17",
+              "long": "78"
+            },
+            "sensor_address": {
+              "building": "nilgiri",
+              "room_no": "100"
+            },
+            "processing": {
+              "data_rate": 0
+            },
+            "sensor_label": ["nilgiri_thm_1", "Timestamp", "temp", "humidity"]
+        },{
+            "sensor_id": "nilgiri_thm_2",
+            "sensor_type":"thermostat",
+            "sensor_geolocation": {
+              "lat": "17",
+              "long": "78"
+            },
+            "sensor_address": {
+              "building": "nilgiri",
+              "room_no": "101"
+            },
+            "processing": {
+              "data_rate": 0
+            },
+            "sensor_label": ["nilgiri_thm_2", "Timestamp", "temp", "humidity"]
+        },{
+            "sensor_id": "nilgiri_thm_3",
+            "sensor_type":"thermostat",
+            "sensor_geolocation": {
+              "lat": "17",
+              "long": "78"
+            },
+            "sensor_address": {
+              "building": "nilgiri",
+              "room_no": "102"
+            },
+            "processing": {
+              "data_rate": 0
+            },
+            "sensor_label": ["nilgiri_thm_3", "Timestamp", "temp", "humidity"]
+        }]
+},{
+    "Location": "vindhya",
+    "lat":"17",
+    "long":"78",
+    "Sensors":
+    [ {
+            "sensor_id": "vindhya_camera_1",
+            "sensor_type":"camera",
+            "sensor_geolocation": {
+              "lat": "17",
+              "long": "78"
+            },
+            "sensor_address": {
+              "building": "vindhya",
+              "room_no": "100"
+            },
+            "processing": {
+              "data_rate": 0
+            },
+            "sensor_label": ["vindhya_camera_1", "Timestamp", "Exposure", "Focus"]
+        },{
+            "sensor_id": "vindhya_camera_2",
+            "sensor_type":"camera",
+            "sensor_geolocation": {
+              "lat": "17",
+              "long": "78"
+            },
+            "sensor_address": {
+              "building": "vindhya",
+              "room_no": "101"
+            },
+            "processing": {
+              "data_rate": 0
+            },
+            "sensor_label": ["vindhya_camera_2", "Timestamp", "Exposure", "Focus"]
+        },{
+            "sensor_id": "vindhya_camera_3",
+            "sensor_type":"camera",
+            "sensor_geolocation": {
+              "lat": "17",
+              "long": "78"
+            },
+            "sensor_address": {
+              "building": "vindhya",
+              "room_no": "102"
+            },
+            "processing": {
+              "data_rate": 0
+            },
+            "sensor_label": ["vindhya_camera_3", "Timestamp", "Exposure", "Focus"]
+        },{
+            "sensor_id": "vindhya_thm_1",
+            "sensor_type":"thermostat",
+            "sensor_geolocation": {
+              "lat": "17",
+              "long": "78"
+            },
+            "sensor_address": {
+              "building": "vindhya",
+              "room_no": "100"
+            },
+            "processing": {
+              "data_rate": 0
+            },
+            "sensor_label": ["vindhya_thm_1", "Timestamp", "temp", "humidity"]
+        },{
+            "sensor_id": "vindhya_thm_2",
+            "sensor_type":"thermostat",
+            "sensor_geolocation": {
+              "lat": "17",
+              "long": "78"
+            },
+            "sensor_address": {
+              "building": "vindhya",
+              "room_no": "101"
+            },
+            "processing": {
+              "data_rate": 0
+            },
+            "sensor_label": ["vindhya_thm_2", "Timestamp", "temp", "humidity"]
+        },{
+            "sensor_id": "vindhya_thm_3",
+            "sensor_type":"thermostat",
+            "sensor_geolocation": {
+              "lat": "17",
+              "long": "78"
+            },
+            "sensor_address": {
+              "building": "vindhya",
+              "room_no": "102"
+            },
+            "processing": {
+              "data_rate": 0
+            },
+            "sensor_label": ["vindhya_thm_3", "Timestamp", "temp", "humidity"]
+        }]
+}]    
+}

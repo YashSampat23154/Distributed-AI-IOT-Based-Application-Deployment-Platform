@@ -1,0 +1,8 @@
+{
+	"language": "python:3.10",
+	"workdir": "/deployer",
+	"port": "8001",
+	"command": "python3 -u /deployer/main.py",
+	"packages_file_path": "/deployer/requirements.txt",
+	"package_installation_cmd": "pip install -r /deployer/requirements.txt"
+}

@@ -1,0 +1,21 @@
+config = {
+    "kafka_platform_ip_": "localhost:9092",
+    "database": "platform",
+    "registry": "app_service_sensor",
+    "topics": "user_topics",
+    "meta_data": "meta",
+    "config_file": "sensor_config.json",
+    "min_dis": "10",
+    "mongouri": "mongodb+srv://admin:iasproject@cluster0.t5qnsna.mongodb.net/",
+    "sensors_url_": "https://iudx-rs-onem2m.iiit.ac.in/resource/sensors",
+    "nodes_url_": "https://iudx-rs-onem2m.iiit.ac.in/resource/nodes/",
+    "data_channels_": "https://iudx-rs-onem2m.iiit.ac.in/channels/",
+    "descriptor_url_": "https://iudx-rs-onem2m.iiit.ac.in/resource/descriptor/",
+    "sensors_url": "/get_sensors",
+    "nodes_url": "/get_nodes",
+    "data_channels": "/channels/",
+    "descriptor_url": "/get_sensor_description",
+    "location_url": "/get_locations",
+    "MONGO_CONNECTION_URL":"mongodb+srv://pranshu_mongo:iasproject@cluster0.svcqjdj.mongodb.net/?retryWrites=true&w=majority",
+    "MONGO_DB_NAME":"IAS_test_1"
+}

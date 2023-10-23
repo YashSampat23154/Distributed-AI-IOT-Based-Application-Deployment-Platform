@@ -1,0 +1,8 @@
+{
+	"language": "python:3.10-alpine",
+	"workdir": "/node_manager",
+	"port": "8001",
+	"command": "python3 -u /node_manager/main.py",
+	"packages_file_path": "/node_manager/requirements.txt",
+	"package_installation_cmd": "pip install -r /node_manager/requirements.txt"
+}

@@ -1,0 +1,5 @@
+FROM {}
+WORKDIR {}
+COPY {} {}
+RUN {}
+ENTRYPOINT {}

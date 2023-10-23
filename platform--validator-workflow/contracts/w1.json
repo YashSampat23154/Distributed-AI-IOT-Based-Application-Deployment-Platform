@@ -1,0 +1,69 @@
+{
+    "workflowName" : "w1",
+    "workflowInputs" : [
+        {
+            "name": "par_1",
+            "dataType": "str",
+            "required" : true
+        },
+        {
+            "name": "email",
+            "dataType": "str"
+        }
+    ],
+    "services": [
+        {
+            "serviceName": "foo",
+            "endpoint" : "/",
+            "parameters": [
+                {
+                    "name":"par_1",
+                    "dataType":"str",
+                    "prevOutput" : false,
+                    "prevServiceName" : null,
+                    "prevOutputName": null,
+                    "workflowInputName" :  "par_1"
+                }            
+            ],
+            "outputs": [
+                {
+                    "name":"res1",
+                    "dataType":"str"
+                },
+                {
+                    "name" : "res2",
+                    "dataType" : "str"
+                }            
+            ]
+        },
+        {
+            "serviceName": "f2",
+            "endpoint" : "/",
+            "parameters": [
+                {
+                    "name" : "email",
+                    "dataType":"str",
+                    "prevOutput" : false,
+                    "prevServiceName" : null,
+                    "prevOutputName": null,
+                    "workflowInputName" :  "email"
+                },
+                {
+                    "name":"body",
+                    "dataType":"str",
+                    "prevOutput" : true,
+                    "prevServiceName" : "foo",
+                    "prevOutputName": "res1",
+                    "workflowInputName" :  null
+                }               
+            ],
+            "outputs": [
+                {
+                    "name": "status",
+                    "dataType": "int"
+                }
+            ]
+        }
+    ],
+    "workflowOuputs": []
+}

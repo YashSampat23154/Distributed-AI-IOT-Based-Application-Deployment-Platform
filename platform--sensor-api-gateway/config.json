@@ -1,0 +1,8 @@
+{
+	"language": "python:3.10-alpine",
+	"workdir": "/sensor_api_gateway",
+	"port": "5000",
+	"command": "python3 -u /sensor_api_gateway/app.py",
+	"packages_file_path": "/sensor_api_gateway/requirements.txt",
+	"package_installation_cmd": "pip install -r /sensor_api_gateway/requirements.txt"
+}

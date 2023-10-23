@@ -1,0 +1,32 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+      "language": {
+        "type": "string"
+      },
+      "workdir": {
+        "type": "string"
+      },
+      "port": {
+        "type": "string"
+      },
+      "command": {
+        "type": "string"
+      },
+      "packages_file_path": {
+        "type": "string"
+      },
+      "package_installation_cmd": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "language",
+      "workdir",
+      "port",
+      "command",
+      "packages_file_path",
+      "package_installation_cmd"
+    ]
+  }

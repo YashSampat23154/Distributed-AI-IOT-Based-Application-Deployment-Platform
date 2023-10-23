@@ -1,0 +1,28 @@
+
+def deploy_deployer(node_info):
+
+    print("==============================================================")
+
+    print(f"\nStarting deployment for deployer\n")
+
+    print("==============================================================\n")
+
+    commands = list()
+    commands.append("cd deployer")
+    commands.append("pip3 install -r requirements.txt > /dev/null")
+    # to see what is going on in deployer.py execute nano nohup.out
+    commands.append("python3 deployer.py > /dev/null")
+    commands.append("exit")
+
+    command = ';'.join(commands)
+
+    os.system(f"sshpass -p {node_info['password']} scp -r /home/jeetshah141199/Desktop/IIITH_SEM_2/IAS_Project/deployer/Hackathon_3  {node_info['user_name']}@{node_info['ip']}:~/deployer")
+    os.system(f"sshpass -p {node_info['password']} ssh {node_info['user_name']}@{node_info['ip']} '{command}'")
+    
+
+    print("==============================================================")
+
+    print(f"\nCompleted deployment for deployer\n")
+
+    print("==============================================================\n")
+

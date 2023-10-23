@@ -1,0 +1,4 @@
+kafka_python==2.0.2
+pymongo==3.11.3
+twilio==8.1.0
+dnspython==2.3.0

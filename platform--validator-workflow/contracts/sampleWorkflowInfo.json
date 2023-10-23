@@ -1,0 +1,100 @@
+{
+    "workflowName" : "sampleWorkflowInfo",
+    "workflowInputs" : [
+        {
+            "name": "appId",
+            "dataType": "str",
+            "required" : true
+        },
+        {
+            "name": "x",
+            "dataType": "int"
+        },
+        {
+            "name": "y",
+            "dataType": "str"
+        }
+    ],
+    "services": [
+        {
+            "serviceName": "foo",
+            "endpoint" : "/foo",
+            "parameters": [
+                {
+                    "name":"par_1",
+                    "dataType":"int",
+                    "prevOutput" : false,
+                    "prevServiceName" : null,
+                    "prevOutputName": null,
+                    "workflowInputName" :  "x"
+                }            
+            ],
+            "outputs": [
+                {
+                    "name":"res1",
+                    "dataType":"str"
+                },
+                {
+                    "name" : "res2",
+                    "dataType" : "int"
+                }            
+            ]
+        },
+        {
+            "serviceName": "bar",
+            "endpoint" : "/bar",
+            "parameters": [
+                {
+                    "name":"par_1",
+                    "dataType":"str",
+                    "prevOutput" : true,
+                    "prevServiceName" : "foo",
+                    "prevOutputName": "res1",
+                    "workflowInputName" :  null
+                },
+                {
+                    "name":"par_2",
+                    "dataType":"int",
+                    "prevOutput" : false,
+                    "prevServiceName" : null,
+                    "prevOutputName": null,
+                    "workflowInputName" :  "y"
+                }               
+            ],
+            "outputs": [
+                {
+                    "name": "res1",
+                    "dataType": "int"
+                }
+            ]
+        },
+        {
+            "serviceName": "random_rating",
+            "endpoint" : "/random_rating",
+            "parameters": [],
+            "outputs": [
+                {
+                    "name": "res1",
+                    "dataType": "int"
+                }
+            ]
+        }
+    ],
+    "workflowOuputs": [
+        {
+            "serviceName": "foo",
+            "serviceParName" : "res2",
+            "parameterName" : "inferene1"
+        },
+        {
+            "serviceName": "bar",
+            "serviceParName": "res1",
+            "parameterName" : "inferene2"
+        },
+        {
+            "serviceName": "random_rating",
+            "serviceParName": "res1",
+            "parameterName" : "inferene3"
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+{
+	"language": "python:3.10-alpine",
+	"workdir": "/sensor_manager",
+	"port": "5000",
+	"command": "python3 -u /sensor_manager/app.py",
+	"packages_file_path": "/sensor_manager/requirements.txt",
+	"package_installation_cmd": "pip install -r /sensor_manager/requirements.txt"
+}

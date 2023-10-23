@@ -1,0 +1,138 @@
+{
+	"applicationName": "finalSampleApp",
+	"services":[        
+		{
+			"name" : "app",
+			"files": ["app.py", "requirements.txt", "config.json"],
+			"endpoint":"/server",
+            "parameters": [
+                {
+                    "name":"appId",
+                    "dataType":"str"
+                },
+                {
+                    "name":"serviceName",
+                    "dataType":"str"
+                },
+                {
+                    "name":"requestData",
+                    "dataType": "dict"
+                }
+            ],
+			"sensors" : [ ],
+            "outputs": [
+                {
+                    "name":"res","dataType":"dict"
+                }            
+            ]
+		},
+		{
+			"name" : "f1",
+			"files": ["f1.py", "requirements.txt", "config.json"],
+			"endpoint":"/",
+            "parameters": [
+                {
+                    "name" : "location",
+                    "dataType":"str"
+                },
+                {
+                    "name" : "mobile_no",
+                    "dataType":"str"
+                },
+                {
+                    "name" : "email",
+                    "dataType":"str"
+                },
+                {
+                    "name" : "type",
+                    "dataType" : "str"
+                },
+                {
+                    "name" : "service_name",
+                    "dataType" : "str"
+                },
+                {
+                    "name" : "app_id",
+                    "dataType" : "str"
+                }
+            ],
+			"sensors" : [
+				{
+					"sensor_type": "AQ",
+                    "num_of_sensors": 3
+				},
+				{
+					"sensor_type": "SE",
+                    "num_of_sensors": 2
+				}
+			],
+            "outputs": [
+                {
+                    "name":"res1",
+                    "dataType":"str"
+                },
+                {
+                    "name" : "res2",
+                    "dataType" : "int"
+                }            
+            ]
+		},
+        {
+			"name" : "f2",
+			"files": ["f2.py", "requirements.txt", "config.json"],
+			"endpoint":"/",
+            "parameters": [
+                {
+                    "name" : "location",
+                    "dataType":"str"
+                },
+                {
+                    "name" : "mobile_no",
+                    "dataType":"str"
+                },
+                {
+                    "name" : "email",
+                    "dataType":"str"
+                },
+                {
+                    "name" : "type",
+                    "dataType" : "str"
+                },
+                {
+                    "name" : "service_name",
+                    "dataType" : "str"
+                },
+                {
+                    "name" : "app_id",
+                    "dataType" : "str"
+                }
+            ],
+			"sensors" : [
+				{
+					"sensor_type": "AQ",
+                    "num_of_sensors": 3
+				},
+				{
+					"sensor_type": "SE",
+                    "num_of_sensors": 2
+				},
+				{
+					"sensor_type": "REM",
+                    "num_of_sensors": 1
+				}
+			],
+            "outputs": [
+                {
+                    "name":"res1",
+                    "dataType":"str"
+                },
+                {
+                    "name" : "res2",
+                    "dataType" : "int"
+                }            
+            ]
+		}	
+	],
+	"workflows" : [ "w1.json" ],
+	"developer_id" : ""
+}

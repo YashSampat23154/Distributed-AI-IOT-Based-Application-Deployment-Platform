@@ -1,0 +1,8 @@
+{
+	"language": "python:3.10-alpine",
+	"workdir": "/Logging",
+	"port": "8295",
+	"command": "python3 -u /Logging/logger.py",
+	"packages_file_path": "/Logging/requirements.txt",
+	"package_installation_cmd": "pip install -r /Logging/requirements.txt"
+}

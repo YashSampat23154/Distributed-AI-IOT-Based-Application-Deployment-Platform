@@ -1,0 +1,2 @@
+./vm_env_setup.sh 20.2.81.4 && exit
+docker compose up -d

@@ -1,0 +1,59 @@
+{
+    "app_id": "app1",
+    "services": [
+        {
+            "sensor": [
+                {
+                    "sensor_type": "WM",
+                    "sensors": [
+                        "WM-WF-KB04-71",
+                        "WM-WF-KB04-72",
+                        "WM-WF-KB04-73"
+                    ]
+                },
+                {
+                    "sensor_type": "AQ",
+                    "sensors": [
+                        "AQ-MG00-00",
+                        "AQ-BN00-00",
+                        "AQ-KN00-00"
+                    ]
+                }
+            ],
+            "service": "algo2",
+            "topic_list": [
+                "app1_algo2_AQ-MG00-00",
+                "app1_algo2_AQ-BN00-00",
+                "app1_algo2_AQ-KN00-00"
+            ]
+        },
+        {
+            "sensor": [
+                {
+                    "sensor_type": "WM",
+                    "sensors": [
+                        "WM-WF-KB04-71",
+                        "WM-WF-KB04-72",
+                        "WM-WF-KB04-73"
+                    ]
+                },
+                {
+                    "sensor_type": "AQ",
+                    "sensors": [
+                        "AQ-MG00-00",
+                        "AQ-BN00-00",
+                        "AQ-KN00-00"
+                    ]
+                }
+            ],
+            "service": "algo2",
+            "topic_list": [
+                "app1_algo2_AQ-MG00-00",
+                "app1_algo2_AQ-BN00-00",
+                "app1_algo2_AQ-KN00-00"
+            ]
+        }
+    ],
+    "topics": [],
+    "user_id": "prateek"
+}

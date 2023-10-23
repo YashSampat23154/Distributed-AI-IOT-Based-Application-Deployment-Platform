@@ -1,0 +1,95 @@
+{
+    "Application": {
+        "username": "prateek",
+        "application_id": "testapplication2",
+        "services": [
+            {
+                "servicename": "algo2",
+                "scheduled": "True",
+                "filename": "algo1.py",
+                "singleinstance": "True",
+                "time": {
+                    "start": [
+                        "01:12",
+                        "05:00"
+                    ],
+                    "end": [
+                        "01:31",
+                        "06:00"
+                    ]
+                },
+                "days": [
+                    "Monday"
+                ],
+                "period": "None",
+                "dependency": [],
+                "environment": {
+                    "python3": true,
+                    "tomcat": true,
+                    "java": true,
+                    "c++": false,
+                    "nginx": false,
+                    "python-kafka": true,
+                    "flask": true
+                },
+                "sensor": [
+                    {
+                        "sensor_type": "WM",
+                        "sensors": [
+                            "WM-WF-KB04-71",
+                            "WM-WF-KB04-72",
+                            "WM-WF-KB04-73"
+                        ]
+                    },
+                    {
+                        "sensor_type": "AQ",
+                        "sensors": [
+                            "AQ-MG00-00",
+                            "AQ-BN00-00",
+                            "AQ-KN00-00"
+                        ]
+                    }
+                ]
+            },
+            {
+                "servicename": "algo3",
+                "scheduled": "True",
+                "filename": "algo3.py",
+                "singleinstance": "False",
+                "dependency": [
+                    "service-1"
+                ],
+                "environment": {
+                    "python3": true,
+                    "tomcat": true,
+                    "java": true,
+                    "c++": false,
+                    "nginx": false,
+                    "python-kafka": true,
+                    "flask": true
+                },
+                "time": {},
+                "days": [],
+                "period": "None",
+                "sensor": [
+                    {
+                        "sensor_type": "WM",
+                        "sensors": [
+                            "WM-WF-KB04-71",
+                            "WM-WF-KB04-72",
+                            "WM-WF-KB04-73"
+                        ]
+                    },
+                    {
+                        "sensor_type": "AQ",
+                        "sensors": [
+                            "AQ-MG00-00",
+                            "AQ-BN00-00",
+                            "AQ-KN00-00"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

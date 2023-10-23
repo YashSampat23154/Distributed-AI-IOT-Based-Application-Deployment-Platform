@@ -1,0 +1,8 @@
+azure-storage-blob==12.15.0
+kafka-python==2.0.2
+load-dotenv==0.1.0
+python-dotenv==1.0.0
+Flask==2.2.3
+python-dotenv==1.0.0
+requests==2.28.2
+pymongo==4.3.3

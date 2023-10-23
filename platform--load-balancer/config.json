@@ -1,0 +1,8 @@
+{
+	"language": "python:3.10-alpine",
+	"workdir": "/load_balancer",
+	"port": "8001",
+	"command": "python3 -u /load_balancer/main.py",
+	"packages_file_path": "/load_balancer/requirements.txt",
+	"package_installation_cmd": "pip install -r /load_balancer/requirements.txt"
+}

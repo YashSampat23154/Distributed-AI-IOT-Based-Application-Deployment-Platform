@@ -1,0 +1,43 @@
+{
+    "type": "object",
+    "properties": {
+        "Application_Name": {
+            "type": "object",
+            "properties": {
+                "Services": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "name": {"type": "string"},
+							"files": {
+								"type": "array",
+								"items": {
+									"type": "string"
+								}
+							  },
+                            "dependency": {"type": "object"},
+                            "environment": {
+                                "type": "object",
+                                "properties": {
+                                    "python3-packages": {"type": "array", "items": {"type": "string"}}
+                                },
+								"required": ["python3-packages"],
+                                "additionalProperties": false
+                            }
+                        },
+                        "required": ["name", "files", "dependency", "environment"],
+                        "additionalProperties": false
+                    }
+                },
+                "application_name": {"type": "string"},
+                "application_id": {"type": "string"},
+                "developer_id": {"type": "string"}
+            },
+            "required": ["Services", "application_name", "application_id", "developer_id"],
+            "additionalProperties": false
+        }
+    },
+    "required": ["Application_Name"],
+    "additionalProperties": false
+}

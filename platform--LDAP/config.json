@@ -1,0 +1,8 @@
+{
+	"language": "python:3.10-alpine",
+	"workdir": "/ldap",
+	"port": "8085",
+	"command": "python3 /ldap/main.py",
+	"packages_file_path": "/ldap/requirements.txt",
+	"package_installation_cmd": "pip install -r /deployer/requirements.txt"
+}

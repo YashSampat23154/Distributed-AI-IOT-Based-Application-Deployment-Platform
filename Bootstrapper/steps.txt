@@ -1,0 +1,12 @@
+1. apk add
+2. apk update
+3. apk add sshpass
+4. apk add --no-cache openssh-client
+
+
+Include in dockerfile of deployer
+
+1. apt-get update
+2. apt-get install sshpass
+3. mkdir /root/.ssh && chmod 0700 /root/.ssh
+3. ssh-keyscan -H 20.2.81.4 >> ~/.ssh/known_hosts

@@ -1,0 +1,35 @@
+.CompactCard {
+    display: flex;
+    flex: 1;
+    height: 7rem!important;
+    border-radius: 0.7rem;
+    color: white;
+    cursor: pointer;
+}
+
+.CompactCard:hover {
+    box-shadow: none;
+}
+
+.detail {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    /* justify-content: space-between; */
+    /* align-items: flex-end; */
+}
+
+.imglogo {
+    width: 7rem;
+}
+
+.detail>span:nth-child(1) {
+    font-size: 20px;
+    font-weight:600;
+}
+
+.detail>span:nth-child(2) {
+    font-size: 22px;
+    font-weight: bold;
+}

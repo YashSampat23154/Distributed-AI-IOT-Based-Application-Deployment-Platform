@@ -1,0 +1,21 @@
+exit status = 0 running
+exit status  = 1 not available 
+exit status = 2 means permission denied
+
+
+check that does any container exit with given container_name
+cmd: docker inspect -f '{{.State.Status}}' container_name | echo $?
+exit_code: >0 means does not exist , =0 exist
+
+container_name exist and check the status of conatiner 
+cmd: docker inspect -f '{{.State.Status}}' container_name
+o/p: running, dead, paused, created, restarting, exited
+
+check that does any container exit with given container_name
+cmd: docker ps -a | grep container_name | wc -l
+o/p: =0 means does not exist , >0 exist
+
+
+check is container_name is in running State
+cmd: docker ps | grep container_name
+o/p: if empty string then not running, else running

@@ -1,0 +1,8 @@
+{
+	"language": "python:3.10-alpine",
+	"workdir": "/api-gateway",
+	"port": "8010",
+	"command": "python3 -u /api-gateway/main.py",
+	"packages_file_path": "/api-gateway/requirements.txt",
+	"package_installation_cmd": "pip install -r /api-gateway/requirements.txt"
+}

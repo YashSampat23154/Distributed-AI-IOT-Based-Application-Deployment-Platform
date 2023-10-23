@@ -1,0 +1,11 @@
+{
+    "AQ": [
+        "Air_Quality"
+    ],
+    "SE": [
+        "Solar_Energy"
+    ],
+    "REM": [
+        "Room_Energy"
+    ]
+}

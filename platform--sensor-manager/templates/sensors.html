@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <h1>Sensors</h1>
+        <div class="row">
+        {% for sensor in sensorlist %}
+            <div class="column">
+              <div class="card">
+                <h4>Sensor Type {{sensor.sensor_type}}</h4>
+                <p>Sensor Instance:</p>
+                <ul>
+                    <p>{{sensor.sensor_instance_name}}</p>
+                </ul>
+                <p>Location: {{sensor.location}}</p>
+                <p>Fields:  
+                    <ul>
+                        {% for label in sensor.labels %}
+                            <li>{{ label }}</li>
+                        {% endfor %}
+                    </ul>
+                </p>
+              </div>
+            </div>
+        {% endfor %}
+        </div> 
+    </body>
+</html>

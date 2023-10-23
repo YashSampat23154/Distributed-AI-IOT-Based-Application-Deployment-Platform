@@ -1,0 +1,8 @@
+{
+	"language": "python:3.10-alpine",
+	"workdir": "/myapp",
+	"port": "8001",
+	"command": "python3 /myapp/foo.py",
+	"packages_file_path": "/myapp/req.txt",
+	"package_installation_cmd": "pip install -r /myapp/req.txt"
+}

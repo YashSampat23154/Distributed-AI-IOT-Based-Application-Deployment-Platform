@@ -1,0 +1,3 @@
+sudo apt-get install libldap2-dev libsasl2-dev libssl-dev
+sudo debconf-set-selections < slapd.seed
+sudo dpkg-reconfigure -f noninteractive slapd

@@ -1,0 +1,8 @@
+{
+	"language": "python:3.10-alpine",
+	"workdir": "/Monitoring-Fault-Tolerance",
+	"port": "8112",
+	"command": "python3 /Monitoring-Fault-Tolerance/monitoring.py",
+	"packages_file_path": "/Monitoring-Fault-Tolerance/requirements.txt",
+	"package_installation_cmd": "pip install -r /Monitoring-Fault-Tolerance/requirements.txt"
+}

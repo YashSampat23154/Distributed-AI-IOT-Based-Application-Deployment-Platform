@@ -1,0 +1,44 @@
+{
+    "AQ-01-H101":{
+        "location": "H101"
+    },
+    "AQ-02-H101":{
+        "location": "H101"
+    },
+    "AQ-03-H101":{
+        "location": "H101"
+    },
+    "SE-01-H101":{
+        "location": "H101"
+    },
+    "SE-02-H101":{
+        "location": "H101"
+    },
+    "SE-03-H101":{
+        "location": "H101"
+    },
+    "REM-01-H101":{
+        "location": "H101"
+    },
+    "AQ-01-H102":{
+        "location": "H102"
+    },
+    "AQ-02-H102":{
+        "location": "H102"
+    },
+    "AQ-03-H102":{
+        "location": "H102"
+    },
+    "SE-01-H102":{
+        "location": "H102"
+    },
+    "SE-02-H102":{
+        "location": "H102"
+    },
+    "SE-03-H102":{
+        "location": "H102"
+    },
+    "REM-01-H102":{
+        "location": "H102"
+    }
+}

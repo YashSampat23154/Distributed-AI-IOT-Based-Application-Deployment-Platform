@@ -1,0 +1,7 @@
+{
+    "name" : "appConfigName",
+    "directories" : [
+        
+    ],
+    "files" : ["appConfig.json"]
+}

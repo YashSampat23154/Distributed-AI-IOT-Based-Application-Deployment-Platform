@@ -1,0 +1,44 @@
+.logs_card{
+    /* background-color: wheat; */
+    border: 2px solid var(--pink);
+    padding: 7px;
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+    /* border-radius: 50px; */
+    width: 300px;
+}
+.logs_card:hover, .instance:hover{
+    background-color: var(--activeItem);
+
+}
+.instance{
+    padding: 7px;
+    margin: 7px;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+    /* border-radius: 50px; */
+}
+.display_box{
+    height: 500px;
+    width: 100%;
+    background-color: black;
+    margin-top: 15px;
+    overflow-y: scroll;
+}
+
+.log_text{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    margin:0
+}
+
+.subsystem_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* border: 2px solid var(--activeItem) */
+}
